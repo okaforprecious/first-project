@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-section-div {
+  background-color: transparent;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.navbar-section-div ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: white;
+}
+
+
+.navbar-section-div div button {
+  background-color: orangered;
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: large;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-section-div div button:hover {
+  background-color: green;
+  color: rgb(179, 0, 255);
+}
+
+/* hero section css */
+.hero-section {
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.347),
+      rgba(3, 3, 8, 0.593),
+      rgba(0, 0, 0, 0.146)),
+    url("home-hero.jpg");
+
+  /* background-image: url("home-hero.jpg"); */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+}
+
+.hero-section h3 {
+  width: 350px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  margin-top: 120px;
+  /* border-color: transparent; */
+}
+
+.hero-section>h1 {
+  font-size: 65px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: large;
+  width: 75%;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+
+.hero-section div button {
+  background-color: orangered;
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  font-size: large;
+  color: white;
+  border-color: transparent;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.hero-section div button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.hero-section .hero-btn-watch {
+  background-color: transparent;
+  border-color: rgba(36, 33, 33, 0.598);
+}
+
+.hero-section .hero-btn-watch:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* .hero-section div  button:nth-child(2) {
+  background-color: orange;
+} */
+/* hero section css ends here */
+
+/* dest css section */
+.dest-section h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.dest-section h3 {
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  color: orangered;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgba(255, 106, 0, 0.4);
+}
+
+.dest-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dest-flex-container div div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: ellipse(50%);
+  border-radius: 100px;
+}
+
+.dest-flex-container div>div {
+  width: 300px;
+}
+
+.dest-flex-container .dest-package-section {
+  border-style: double;
+  background-color: white;
+  border-color: transparent;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  top: -35px;
+  left: 80px;
+
+}
+
+.dest-package-section h4 {
+  background-color: rgba(255, 106, 0, 0.4);
+  border-radius: 10px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  color: rgba(255, 68, 0, 0.76);
+}
+
+.dest-flex-container h5 {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+/* dest css section ends here */
+
+/* about us section css */
+.about-us-section {
+  background-color: #fff7ec;
+}
+
+.about-us-flex-container {
+  display: flex;
+  padding: 100px;
+}
+
+.about-us-2nd-child h3 {
+  color: orangered;
+  background-color: white;
+  border-radius: 20px;
+  font-size: x-large;
+  width: 200px;
+  text-align: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.about-us-2nd-child h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.about-us-2nd-child p {
+  font-size: large;
+}
+
+.about-us-2nd-child > div {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* about us section css ends here */
+
+
+
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 834px) {
+  .hero-section {
+    height: auto;
+  }
+
+  .navbar-section-div ul {
+    display: none;
+  }
+
+  .navbar-section-div div button {
+    display: none;
+  }
+
+  /* hero css media query */
+  .hero-section h1 {
+    width: 100%;
+  }
+
+  .hero-section p {
+    width: 100%;
+  }
+
+  .hero-section .hero-btn-watch {
+    margin-top: 30px;
+  }
+
+
+
+}
+
+@media (max-width: 900px) {
+  .dest-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dest-section h1 {
+    font-size: 30px;
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  .hero-section h3 {
+    width: 220px;
+    font-size: medium;
+  }
+
+  .hero-section h1 {
+    font-size: 43px;
+  }
+}
